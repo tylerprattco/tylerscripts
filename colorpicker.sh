@@ -1,8 +1,5 @@
 #!/bin/zsh
 #
-# Requires colorpicker and xclip (use pbcopy for mac)
+# Requires colorpicker and xclip
 # selects color and outputs
-colorpicker --short --one-shot | xargs echo -n | xclip -selection c | xclip -o
-
-# mac script
-# colorpicker --short --one-shot | xargs echo -n | pbcopy
+colorpicker --short --one-shot | xargs echo -n | xclip -selection c
